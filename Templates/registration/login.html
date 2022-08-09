@@ -1,0 +1,73 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'css/registration/login.css' %}">
+
+    <title>ChatsTool - Login</title>
+</head>
+<body>
+
+    <nav class="nav_div">
+        <a href="{% url 'home' %}" class="a_to_home">
+
+            <div class="logo_nav">
+        
+            </div>
+
+        </a>
+    </nav>
+
+
+
+    {% if user.is_authenticated %}
+
+    <div class="go_to_home_div">
+        <a href="{% url 'home' %}" class = 
+        'go_home'>
+
+            <div class="return_div">
+
+                <p>You've already started, go home!</p>
+
+            </div>
+
+        </a>
+
+        <a href='{% url 'logout' %}' class = 'logout_link_inloged'>O cierra sesión</a>
+    </div>
+
+    {% else %}
+
+        <div class="form_login_main_div">
+            <div class="logo_to_form_div">
+                <p>Log In</p>
+            </div>
+
+            
+            <form action="" method="post" class= 'form_login'>
+
+                {% csrf_token %}
+
+                {{ form.as_p }}
+
+                <div class="button_form_div">
+                    <button type="submit">Log In</button>
+                </div>
+
+            </form>
+
+        </div>
+        <a href = '{% url 'register' %}' class = 'login_a'>Or Register</a>
+
+    {% endif %}
+
+
+
+
+</body>
+</html>

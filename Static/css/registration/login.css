@@ -1,0 +1,284 @@
+/*  */
+body {
+    margin: 0 20px;
+    padding: 0;
+    height: 500px;
+    background: #DEB6AB;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+
+
+
+
+
+
+
+
+
+/* ------------------------------ */
+
+
+
+
+
+
+
+
+/* Nav */
+nav {
+    width: 100%;
+    height: 50px;
+    background: #F5E8C7;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 5px 20px;
+}
+
+
+.logo_nav {
+
+    background: #cabfa3;
+    width: 40px;
+    height: 40px;
+
+    border-radius: 15px;
+
+}
+
+
+
+
+
+
+
+.form_login_main_div {
+    margin-top: 70px;
+    background-color: #c39d93;
+    /* height: 00000000px; */
+    width: 330px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-content: center;
+    padding: 30px;
+    border: 1px #ab8980 solid;
+
+    border-radius: 20px;
+
+    
+    flex-wrap: nowrap;
+    align-items: center;
+    min-height: 400px;
+}
+
+
+
+
+.logo_to_form_div {
+    height: 50px;
+    border-radius: 15px;
+    width: 100%;
+    display: flex;
+    /* background-color: #7e655f; */
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+.logo_to_form_div p{
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+
+    font-style: italic;
+    font-size: 20px;
+    color: #ebe4d2;
+
+}
+
+
+
+
+.form_login {
+    margin-top: 50px;
+
+    height: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+}
+
+
+
+#id_username, #id_password {
+    border: none;
+    background: #F5E8C7;
+    font-family: Arial, Helvetica, sans-serif;
+
+    font-style: italic;
+
+    padding: 5px 10px 5px 15px;
+
+    outline: none;
+
+    width: 250px;
+    height: 100%;
+}
+
+
+
+
+/* #id_username:focus, #id_password:focus {
+    border: 2px #808fab solid;
+} */
+
+
+
+
+.form_login label {
+    font-family: Arial, Helvetica, sans-serif;
+    color: #808fab;
+    font-style: italic;
+
+    font-weight: bold;
+    width: 100%;
+
+    user-select: none;
+}
+
+
+
+.form_login p {
+    padding: 7px 10px;
+    border: 1.5px #ab8980 solid;
+
+    display: flex;
+    flex-direction: column;
+    background: #F5E8C7;
+
+
+    border-radius: 10px;
+
+}
+
+
+
+.button_form_div button {
+    user-select: none;
+    cursor: pointer;
+    margin-top: 30px;
+
+    padding: 10px 40px;
+    border-radius: 7px;
+    border: none;
+
+    background-color: rgb(206, 143, 110);
+    border: rgb(172, 119, 90) solid;
+
+    border-width: 1.5px 1.5px 4px 1.5px ;
+    border-style: solid solid outset solid;
+
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bolder;
+    font-style: italic;
+
+    color: white;
+}
+
+.button_form_div button:hover {
+    background-color: rgb(184, 128, 98);
+
+}
+
+
+
+.nonfield li {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    font-style: italic;
+
+    width: 270px;
+    text-decoration: none;
+    list-style: none;
+    text-align: center;
+    color: rgb(223, 93, 93);
+}
+
+
+.form_login ul {
+    display: block;
+    list-style-type: disc;
+    margin-block-start: 0em;
+    margin-block-end: 0em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    padding-inline-start: 0px;
+}
+
+
+
+
+.return_div p {
+
+    padding: 20px 30px;
+
+    background-color: rgb(206, 143, 110);
+    border: rgb(172, 119, 90) solid;
+
+    border-width: 1.5px 1.5px 5px 1.5px ;
+    border-style: solid solid outset solid;
+
+    border-radius: 50px;
+    text-decoration: none;
+    color:aliceblue;
+
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bolder;
+    font-style: italic;
+
+}
+
+
+
+.go_home {
+    text-decoration: none;
+}
+
+
+.go_to_home_div {
+    margin-top: 200px;
+    display: flex;
+
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+
+
+.logout_link_inloged {
+    font-family: Arial, Helvetica, sans-serif;
+    color: black;
+
+    font-style: italic;
+}
+
+.login_a {
+    font-family: Arial, Helvetica, sans-serif;
+    color: black;
+
+    font-style: italic;
+    margin-top: 20px;
+}
